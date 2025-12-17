@@ -6,10 +6,7 @@ datalogger.onLogFull(function () {
     basic.setLedColors(0x000000, 0x000000, 0xff0000)
     basic.pause(100)
 })
-basic.forever(function () {
-	
-})
-loops.everyInterval(100, function () {
+loops.everyInterval(500, function () {
     datalogger.mirrorToSerial(true)
     SCD40.start_continuous_measurement()
     datalogger.log(
@@ -18,4 +15,7 @@ loops.everyInterval(100, function () {
     datalogger.createCV("", 0)
     )
     SCD40.stop_continuous_measurement()
+})
+basic.forever(function () {
+	
 })
