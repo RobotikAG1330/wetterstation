@@ -1,0 +1,31 @@
+{
+    "name": "Wetterstation",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "v3": "*",
+        "CO2-Sensor-SCD40": "github:calliope-edu/co2-sensor-scd40#8557b8a5b2d52ad3026e33000ee29db0c96eff2a",
+        "AT24CXX": "github:makecode-extensions/at24xx#v1.0.0",
+        "datalogger": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v7.1.31",
+        "tag": "v7.1.31",
+        "commits": "https://github.com/microsoft/pxt-calliope/commits/65d8c356b2b4bbd74137b6fc952d4449a7eae48d",
+        "target": "8.1.11",
+        "pxt": "11.4.16",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "blocksprj"
+}
